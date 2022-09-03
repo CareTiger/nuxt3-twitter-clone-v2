@@ -42,6 +42,7 @@ add tailwindcss config to nuxt config (https://github.com/CareTiger/nuxt3-ui-com
 
 ## Registration and Login
 - Create a simple email based registration/login page (without any password) - (https://tailwindui.com/components/application-ui/forms/sign-in-forms)
+- install tailwind/forms 
 - update the pinia state and test the front end flow
 - create middleware to test the user state and navigate appropriately
 

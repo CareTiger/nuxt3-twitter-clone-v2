@@ -18,8 +18,8 @@
             </div>
 
             <div class="ml-10 space-x-4">
-                <a href="#" class="inline-block rounded-md border border-transparent bg-sky-600 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
-                <a href="#" class="inline-block rounded-md border border-transparent bg-gray-100 py-2 px-4 text-base font-medium text-sky-600 hover:bg-sky-50">Sign up</a>
+                <nuxt-link to="/auth" class="inline-block rounded-md border border-transparent bg-sky-600 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">Sign in</nuxt-link>
+                <nuxt-link to="/auth" class="inline-block rounded-md border border-transparent bg-gray-100 py-2 px-4 text-base font-medium text-sky-600 hover:bg-sky-50">Sign up</nuxt-link>
             </div>
         </div>
         <div class="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
