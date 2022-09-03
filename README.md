@@ -30,7 +30,7 @@ add tailwindcss config to nuxt config (https://github.com/CareTiger/nuxt3-ui-com
 - import material icons and add the href to the meta in nuxt config
 - create an error.vue in the root folder (https://tailwindui.com/components/marketing/feedback/404-pages)
 - TEST
-- create custom buton classes by updating the tailwind.css
+- create custom button classes by updating the tailwind.css
 - create a simple navbar and footer components and add the components to the default layout
 - TEST 
 
