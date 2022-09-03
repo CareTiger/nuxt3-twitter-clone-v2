@@ -37,12 +37,14 @@ add tailwindcss config to nuxt config (https://github.com/CareTiger/nuxt3-ui-com
 ## Pinia 
 - install @pinia/nuxt  (see documention here - https://pinia.vuejs.org/ssr/nuxt.html)
 - add it to the nuxt config modules (npm run.  it might crash.  remove package-lock.json and node_modules folder following by npm install command)
-- create a user state module (https://github.com/CareTiger/nuxt3-pinia)
-- app state - add isLoading and show a spinner modal
+- create a user and app state stores (https://github.com/CareTiger/nuxt3-pinia)
+- app state - add isLoading and show a spinner modal . past examples -
+    - https://github.com/CareTiger/OLD_sampyl/search?q=centerModal
+    - 
 
 ## Registration and Login
 - Create a simple email based registration/login page (without any password) - (https://tailwindui.com/components/application-ui/forms/sign-in-forms)
-- install tailwind/forms 
+- add @tailwind/forms to the tailwind config
 - update the pinia state and test the front end flow
 - create middleware to test the user state and navigate appropriately
 
