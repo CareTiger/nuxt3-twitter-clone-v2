@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center mx-3">
+    <div class="flex items-center justify-center mx-3 mt-2">
 
         <div class="flex-shrink-0 hidden lg:block">
             <img class="inline-block h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <div class="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2 bg-slate-600">
+                <div class="absolute inset-x-0 bottom-0 flex justify-between py-2 pl-3 pr-2 bg-slate-600 rounded-lg">
                     <div class="flex items-center space-x-5">
                         <div class="flex items-center">
                             <button type="button" class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-slate-400 hover:text-slate-500">
