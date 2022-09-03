@@ -53,6 +53,9 @@ add tailwindcss config to nuxt config (https://github.com/CareTiger/nuxt3-ui-com
 - create a data folder with dummy tweets
 - display stream of tweets. use this card with avatar (https://tailwindui.com/components/application-ui/headings/page-headings)
 
+## setup supabase auth
+- https://github.com/CareTiger/nuxt3-supabase-auth
+
 # SERVER SETUP
 ## set up the api folder 
 - create user registration/login post components (1:25 mark in this video https://www.youtube.com/watch?v=_cM4j9_LfQk)
