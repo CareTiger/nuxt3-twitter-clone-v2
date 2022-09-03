@@ -35,7 +35,8 @@ add tailwindcss config to nuxt config (https://github.com/CareTiger/nuxt3-ui-com
 - TEST 
 
 ## Pinia 
-- install pinia
+- install @pinia/nuxt  (see documention here - https://pinia.vuejs.org/ssr/nuxt.html)
+- add it to the nuxt config modules (npm run.  it might crash.  remove package-lock.json and node_modules folder following by npm install command)
 - create a user state module (https://github.com/CareTiger/nuxt3-pinia)
 - app state - add isLoading and show a spinner modal
 
