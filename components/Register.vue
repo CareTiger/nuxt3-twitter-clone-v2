@@ -17,7 +17,7 @@
 
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form class="space-y-6" action="#" method="POST">
+            <form class="space-y-6" @submit.prevent="() => (isSignUp ? handleSignup() : handleLogin())">
                 <div>
                 <label for="email" class="block text-sm font-medium text-slate-700">Email address</label>
                 <div class="mt-1">
@@ -34,7 +34,7 @@
 
                 <div class="flex items-center justify-end">
                     <div class="text-sm">
-                        <a href="#" class="font-medium text-sky-600 hover:text-sky-500">Forgot your password?</a>
+                        <a href="#" class="font-medium text-slate-900 hover:text-sky-500">Forgot your password?</a>
                     </div>
                 </div>
 
@@ -83,9 +83,9 @@
                 </div>                
                 <p class="mt-4 text-xs text-slate-400 text-center">
                     <span>By continuing you agree to Clone's</span>
-                    <span class="text-slate-900"> <nuxt-link to=""> Terms of service</nuxt-link></span>
+                    <span class="text-slate-900"> <nuxt-link to="#"> Terms of service</nuxt-link></span>
                     <span> and acknowledge you've read our</span>
-                    <span class="text-slate-900"><nuxt-link to=""> Privacy Policy</nuxt-link></span>
+                    <span class="text-slate-900"><nuxt-link to="#"> Privacy Policy</nuxt-link></span>
                 </p>
                 <p class="mt-4 text-xs text-center">
                     <nuxt-link to="" class=" text-slate-900" @click="isSignUp = !isSignUp">
@@ -103,17 +103,46 @@
 </template>
 
 <script setup>
-    const isSignUp = ref(false);
+import { useUserStore } from '~~/store/user';
+const userStore = useUserStore();
+const isSignUp = ref(false);
+// const client = useSupabaseClient()
+const payload = {
+    email: null,
+    password: null
+}
 
-    const payload = {
-        email: null,
-        password: null
+const handleSignup = () => {
+    /*
+    const { user, error } = await client.auth.signUp({
+        email: email.value,
+        password: password.value,
+    })
+    console.log('user', user)
+    console.log('error', error)
+    if(user){
+        // tell them to verify their email
     }
-
-    const handleSignup = () => {
-        console.log(payload)
+    if(error) {
+        // tell them the error
     }
-    const handleLogin = () => {
-        console.log(payload)
-    }
+    */
+    try {
+        userStore.handleSignup(payload)
+    } catch (error) {
+        
+    }    
+    
+}
+const handleLogin = () => {
+    /*
+    const { user, error } = await client.auth.signIn({
+        email: email.value,
+        password: password.value,
+    })
+    console.log('user', user)
+    console.log('error', error)
+    */
+    userStore.handleLogin(payload)
+}
 </script>

@@ -9,7 +9,13 @@ export const useUserStore = defineStore({
         }
     },
     actions: {
-        
+        handleLogin(user) {
+            this.user = user;
+        },
+
+        handleSignup(user) {
+            this.user = user;
+        }
     },
     getters: {}
 })
