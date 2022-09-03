@@ -1,5 +1,5 @@
 <template>
     <div>
-        <i class = "material-icons-outlined">accessibility</i>
+        HOME
     </div>
 </template>
