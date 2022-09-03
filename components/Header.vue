@@ -17,7 +17,7 @@
                 </div>                 
             </div>
 
-            <div class="col-start-6 col-span-6 lg:col-start-10 lg:col-span-3">
+            <div class="col-start-7 col-span-6 lg:col-start-10 lg:col-span-3">
                 <div class="flex flex-row items-center justify-end space-x-4 ">
                     <nuxt-link to="/auth" class="btn btn-primary">Sign in</nuxt-link>
                     <nuxt-link to="/auth" class="btn btn-secondary">Sign up</nuxt-link>

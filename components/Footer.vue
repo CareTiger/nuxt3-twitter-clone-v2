@@ -27,7 +27,7 @@
             <a href="#" class="text-base text-gray-500 hover:text-gray-900">Partners</a>
         </div>
         </nav>
-        <p class="mt-8 text-center text-base text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+        <p class="mt-8 text-center text-base text-gray-400">&copy; 2022 Clone, Inc. All rights reserved.</p>
     </div>
 </footer>
 

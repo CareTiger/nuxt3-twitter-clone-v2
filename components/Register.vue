@@ -9,14 +9,14 @@
         ],
     }
     -->
-    <div class="flex min-h-screen flex-col items-center justify-center -my-16 lg:-my-24 sm:px-6 lg:px-8">
+    <div class="flex lg:min-h-screen flex-col lg:items-center lg:justify-center lg:-my-24 sm:px-6 px-4 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
             <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Welcome to Clone</h2>
             <p class="mt-2 text-sm dark:text-white text-center">Find answers to your most pressing professional questions</p>
         </div>
 
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-            <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+            <div class="bg-white py-8 px-4 shadow rounded-lg sm:px-10">
             <form class="space-y-6" @submit.prevent="() => (isSignUp ? handleSignup() : handleLogin())">
                 <div>
                 <label for="email" class="block text-sm font-medium text-slate-700">Email address</label>
@@ -129,6 +129,7 @@ const handleSignup = () => {
     */
     try {
         userStore.handleSignup(payload)
+        navigateTo("/")
     } catch (error) {
         
     }    
@@ -143,6 +144,11 @@ const handleLogin = () => {
     console.log('user', user)
     console.log('error', error)
     */
-    userStore.handleLogin(payload)
+    try {
+        userStore.handleLogin(payload)
+        navigateTo("/")        
+    } catch (error) {
+        
+    }
 }
 </script>

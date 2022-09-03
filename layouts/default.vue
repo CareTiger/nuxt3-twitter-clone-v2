@@ -8,7 +8,7 @@
         <Header />
 
         <div class=" bg-white dark:bg-slate-800">
-            <div class="min-h-screen max-w-7xl mx-auto">
+            <div class="max-w-7xl mx-auto">
                 <slot />
             </div>
         </div>
